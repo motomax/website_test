@@ -6,105 +6,63 @@
     <meta name = "description" content = "Max Gong's website, resume, web projects">
     <meta name = keywords content = "Max Gong, UCLA, resume, website, projects, IEEE">
     <!--refer to your css-->
-    <link rel="stylesheet" href = "maxtheg.css">
-    <!--bootstrap-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="jquery.zaccordion.js"></script>
-    <script src="jquery.zaccordion.min.js"></script>
-    <script type="text/javascript">
-			$(document).ready(function() {
-				$("#slider").zAccordion({
-					tabWidth: "16%",
-					width: "90%",
-                    auto: false,
-					height: "600px",
-                    slideClass: "slider",
-                    trigger: "mouseover",
-                    animationStart: function () {
-                        $('#slider').find('li.slider-open div').css('display', 'none');
-                        $('#slider').find('li.slider-previous div').css('display', 'none');
-                    },
-                    animationComplete: function () {
-                        $('#slider').find('li div').fadeIn(100);
-                    }
-                    });
-			});
-    </script>
+    <link rel="stylesheet" href = "css/simple_max.css">
+    <link rel="stylesheet" href = "css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+    
 <body>
-    <div id = "top">            <!-- WHY ISN'T MY RESUME SHIT LOADINGGGG -->
-        <div class = "row"> 
-            <div class = "col-sm-2"><h3 class = "hvr-underline-from-center" id = "max">Max</h3></div>
-            <div class = "col-sm-6"></div>
-            <div class = "col-sm-1"><a href="Resume_Max_Gong.pdf" style="text-decoration:none"><h3 class = "hvr-wobble-horizontal" id = "resume">Resume</h3></a></div>
-            <div class = "col-sm-1"><a href = "#projects"><h3 class = "hvr-underline-from-center">Projects</h3></a></div>
-            <div class = "col-sm-1"><a href = "#photography"><h3 class = "hvr-underline-from-center">Photography</h3></a></div>
-            <div class = "col-sm-1"><a href = "#contact"><h3 class = "hvr-underline-from-center">Contact</h3></a></div>
+    <div class = "page" id = "one">
+        <h1>MAX GONG</h1>
+    </div>
+ 
+    <div class = "page" id = "two">
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "title col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    ABOUT ME
+                </div>
+            </div>
+        </div>
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "description col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6">
+                    Electrical engineer, photographer, producer, CADder, tinkerer, longboarder, violinist
+                </div>
+                <div class = "title col-md-3 col-lg-3">
+                    IMAGE HERE REMOVE TITLE
+                </div>
+            </div>
         </div>
     </div>
     
-    <div id = "one" class = "whatever">
-        <h1>Max Gong</h1>
-        <p>UCLA</p>
+    <div class = "page" id = "three">
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "title col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    PROJECTS
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div id = "two" class = "whatever">             
-        <a name = "projects" style="text-decoration:none"><h1><span style="color:#a820d1">|  </span>Projects</h1></a>
-        <ul id = "slider"> 
-            <li><img src = "https://farm9.staticflickr.com/8672/16618765472_97984223af_z_d.jpg"/>
-                <div>
-                    <strong>FTC</strong>
-                    <p>Build robots using TETRIX and code using Robot-C. Qualified for regional championships.</p>
+    <div class = "page" id = "four">
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "title col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    PHOTOGRAPHY
                 </div>
-            </li>
-            <li><img src = "IMG_2215.JPG"/>
-                <div>
-                    <strong>Timers</strong>
-                    <p>Breadboarding: Asynchronous and synchronous timers, Multisim, FPGA boards</p>
-                </div>
-            </li>
-            <li><img src = "DSC_8550.jpg"/>
-                <div>
-                    <strong>Shadow Bot</strong>
-                    <p>Robot that responds to Xbox Kinect movements, won Microsoft Award in 2015 LA Hacks</p>
-                </div>
-            </li>
-            <li><img src = "Project_shop_1.png"/>
-                <div>
-                    <strong>Project Shop</strong>
-                    <p>Android app using crowd-funding to sponsor designers. Front-end: icons and styling</p>
-                </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
     
-    <div id = "inbetween" class = "whatever">
-    </div>
-    
-    <div id = "three" class = "whatever">
-        <a name = "photography" style="text-decoration:none"><h1><span style="color:#a820d1">|  </span>Photography</h1> 
-        <ul class = "row" id = "one_p">
-            <li class = "col-sm-6 col-md-4 col-lg-2"><img src = "https://farm6.staticflickr.com/5660/20388697340_4a332980b7_z_d.jpg"/></li>
-            <li class = "col-sm-6 col-md-4 col-lg-2"><img src = "https://farm1.staticflickr.com/629/20400544700_0d5c67476c_z_d.jpg"/></li>
-            <li class = "col-sm-6 col-md-4 col-lg-2"><img src = "https://farm9.staticflickr.com/8747/16899335601_9f8a7c9c89_z_d.jpg"/></li>
-        </ul>
-        <ul class = "row" id = "two_p">
-            <li class = "col-sm-6 col-md-4 col-lg-2"><img src = "https://farm1.staticflickr.com/499/18478224239_4731dbea57_z_d.jpg"/></li>
-            <li class = "col-sm-6 col-md-4 col-lg-2"><img src = "https://farm8.staticflickr.com/7665/17082984958_2872cebe68_z_d.jpg"/></li>
-            <li class = "col-sm-6 col-md-4 col-lg-2"><img src = "https://farm9.staticflickr.com/8595/16780309891_4ea0955361_z_d.jpg"/></li>   
-        </ul>
-    </div>
-        
-    <div id = "end" class = "whatever">
-        <a name = "contact" style="text-decoration:none"><h1><span style="color:#a820d1">|  </span>Contact</h1> 
-        <div class = "row">
-            <div class = "col-sm-4">Phone | 510-673-1716</div>
-            <div class = "col-sm-4">Email | 999mgongv8@gmail.com</div>
-            <div class = "col-sm-4">Facebook | facebook.com/max.gong.549</div>
+    <div class = "half_page" id = "end">
+        <div class = "container-fluid">
+            <div class = "title col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    CONTACT
+            </div>
         </div>
     </div>
 </body>
