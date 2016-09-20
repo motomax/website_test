@@ -4,94 +4,72 @@ html{
 body{
     min-height: 100%;
 }
-div {
+.page {
     position: relative;
     display: inline-block;
-    height: 105%;
+    height: 101%;
     width: 100%;
+    margin: auto;
 }
-
-/*h1{     /* WHY DOESN'T THIS APPLY TO ALL H11111 
-    font-family: "Junction-Light", exo, roboto light;
-}
-p{
-    font-family: 'Exo', Roboto Light;
-}*/
-#top{
-    z-index: 1000;
-    position: fixed;
-    display: inline;
-    text-align: center;
-    font-family: 'Roboto Light';
-    font-size: 40px;
-    background-color: rgba(29, 29, 29, 0.8);
-    height: 6%;
-    padding-bottom: 30px;
-    box-shadow: 0 4px 4px -2px #232323;
-    -moz-box-shadow: 0 4px 4px -2px #232323;
-    -webkit-box-shadow: 0 4px 4px -2px #232323;
-    max-width: 100%;
-}
-#top .row h3{
-    padding-bottom: 5%;
-    color: antiquewhite;
-    height: 100%;
-    width: 105%;
-}
-#top #max {
-    width: 50%;
-    color: #bc4bde;
-}
-#top #resume {
-    font-family: "Roboto";
+.half_page{
+    position: relative;
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+    margin: auto;
 }
 
 #one h1 {
-    font-size: 175px;
-    color: black;
     text-align: center;
-    padding-top: 275px;
-    font-weight: 500;
-    font-family: 'Roboto light', exo, Droid Sans Mono;
-    padding-bottom: 30px;
-}
-#one p {
-    font-size: 90px;
-    color: black;
-    text-align: center;
-    padding-top: 25px;
-    font-family: 'Exo';
-    border-top: solid 5px #a820d1;
-    width: 25%;
-    margin: auto;
+    padding-top: 10%; 
+    font-size: 12em;
+    color: black;   
+    font-family: 'Roboto Light'; 
 }
 #one {
-    background-image: url("20390426379_2147ff89c2_o_BW_low.jpg");
-    text-align: center;
+    background-color: #eaeaea;  
 }
 
-#two{
-    background-image: url("20390426379_2147ff89c2_o_blur.jpg");
+#two {
+    background-color: #c6c6c6;
 }
-#two h1{
-    color: black;
-    font-size: 75px;
-    font-family: 'Exo thin';
-    text-align: left;
-    padding-left: 75px;
-    padding-top: 60px;
-    padding-bottom: 50px;
+
+#three {
+    background-color: #a7a7a7;
 }
-#two ul{   
-    padding-top: 15px;
-    font-family: 'Roboto Light';
-    font-size: 20px;
+
+#four {
+    background-color: #6d6d6d;
+}
+#four .title{
     color: white;
-    text-align: left;
-    margin: auto;
-    position:relative;
-    display: block;
 }
+
+#end {
+    background-color: #404040;
+}
+#end .title{
+    color: white;
+}
+
+.title{
+    color: black;
+    font-size: 6em;
+    font-family: 'Roboto Light';
+    text-align: left; 
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.description{
+    color: black;
+    font-size: 2em;
+    font-family: "David Libre";
+    text-align: left;
+    padding-top: 2%;
+}
+
+/*
 #two #slider{
     height: 80%;
     width: 90%;
@@ -160,70 +138,8 @@ p{
     height: 30%;
 }
 
-#three h1{
-    color: white;
-    font-size: 75px;
-    font-family: 'Exo thin';
-    text-align: left;
-    padding-left: 75px;
-    padding-top: 60px;
-}
-#three{
-    background-image: url("20388697340_c57d3a4e8c_o_blur.jpg");
-}
-#three .row{
-    height: 40%;
-    width: 90%;
-    margin: auto;
-    padding-top: 1%;
-}
-#three #two_p{
-    padding-top; 2%;
-}
-#three .row .col-sm-6{
-    width: asdf;                // this needs to be fixed
-    position: relative;
-    display: inline;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-#three img{
-    max-height: 30%;
-    width: auto;
-    margin: auto;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.69);
-}
-#three img:hover{
-    opacity: .8;
-}
 
-#end{
-    height: 30%;
-    background-image: url("20388697340_c57d3a4e8c_o_BW_low.jpg");
-    margin-bottom: 0;
-    overflow: hidden;
-}
-#end h1{
-    color: white;
-    font-size: 75px;
-    font-family: 'Exo thin';
-    text-align: left;
-    padding-left: 75px;
-    padding-top: 30px;
-}
-#end .row{
-    padding-top: 60px;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Roboto';
-    color: white;
-    padding-right: 60px;
-}
-#end .col-sm-4{     /* SOLVE FOR WTF THIS FACEBOOK LINK IS BLUE */
-    color: #a820d1;
-    text-decoration: none;
-}
+
 
 @media only screen and (max-width: 1250px){
     #one h1{
@@ -250,120 +166,3 @@ p{
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
 } 
-
-/* Underline From Center */
-.hvr-underline-from-center {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  background: #a820d1;
-  height: 4px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
-}
-
-/* Wobble Horizontal */
-@-webkit-keyframes hvr-wobble-horizontal {
-  16.65% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px);
-  }
-
-  33.3% {
-    -webkit-transform: translateX(-6px);
-    transform: translateX(-6px);
-  }
-
-  49.95% {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px);
-  }
-
-  66.6% {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px);
-  }
-
-  83.25% {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px);
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-@keyframes hvr-wobble-horizontal {
-  16.65% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px);
-  }
-
-  33.3% {
-    -webkit-transform: translateX(-6px);
-    transform: translateX(-6px);
-  }
-
-  49.95% {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px);
-  }
-
-  66.6% {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px);
-  }
-
-  83.25% {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px);
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
-.hvr-wobble-horizontal {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
-  -webkit-animation-name: hvr-wobble-horizontal;
-  animation-name: hvr-wobble-horizontal;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
